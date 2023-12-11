@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Projeto</title>
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>DEPÓSITO DE BEBIDAS S.A.</h2>
+        </div>
+        <div class="banner">
+            <img src="https://images.vexels.com/media/users/3/313958/raw/cf35b0e9da9a191f0ff9253067c566d1-beer-bottles-and-hops-pattern-design-diseno-de-patron-de-botellas-de-cerveza-y-lupulo-garrafas-de-cerveja-e-design-de-padrao-de-lupulo-bierflaschen-und-hopfenmusterdesign.jpg"
+                alt="y">
+        </div>
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Cadastrar Bebida no Estoque:">
+        <input type="text" id="newQuantity" placeholder="Quantidade:">
+        <input type="text" id="newPrice" placeholder="Valor:">
+        <span onclick="newItem()" class="addBtn">Adicionar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Estoque</th>
+                <th>Quantidade</th>
+                <th>R$</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
